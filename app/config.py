@@ -12,6 +12,7 @@ class AppConfig:
         self.client_secret = os.getenv("CLIENT_SECRET")
         self.redirect_uri = os.getenv("REDIRECT_URI")
         self.callback_hostname = os.getenv("CALLBACK_HOSTNAME")
+        print(os.getenv("CALLBACK_HOSTNAME"))
         self.callback_port = int(os.getenv("CALLBACK_PORT"))
 
     def __repr__(self) -> str:
